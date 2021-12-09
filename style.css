@@ -1,10 +1,15 @@
 * {
     margin: 0;
 }
+#navigation {
+    justify-self: center;
+
+}
 #color-palette {
     border: solid 1px red;
-    
-    display: inline-block;
+    display: inline-flex;
+    position: relative;
+    margin: 2% 29.5%;
 }
 .color {
     display: inline-block;
@@ -12,4 +17,16 @@
     width: 100px;
     border: solid 1px black;
     margin: 20px;
+}
+#black {
+    background-color: black;
+}
+#color2 {
+    background-color: crimson;
+}
+#color3 {
+    background-color: rgb(22, 145, 22);
+}
+#color4 {
+    background-color: blue;
 }
