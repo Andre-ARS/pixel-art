@@ -15,15 +15,15 @@
     /* border: solid 1px red; */
     display: inline-flex;
     position: relative;
-    margin: 2% 29%;
+    margin: 2% 34.9%;
 }
 
 .color {
     display: inline-block;
-    height: 100px;
-    width: 100px;
+    height: 70px;
+    width: 70px;
     border: solid 1px black;
-    margin: 20px;
+    margin: 15px;
 }
 
 #black {
@@ -40,4 +40,18 @@
 
 #color4 {
     background-color: blue;
+}
+
+#pixel-board {
+    display: inline-block;
+    margin: 0 41%;
+
+}
+
+.pixel {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border: solid 1px black;
+    background-color: #fff;
 }
