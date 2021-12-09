@@ -16,6 +16,7 @@
     display: inline-flex;
     position: relative;
     margin: 2% 34.9%;
+    background-color: rgb(32, 66, 32);
 }
 
 .color {
@@ -54,4 +55,9 @@
     width: 40px;
     border: solid 1px black;
     background-color: #fff;
+}
+
+.selected {
+    transform: translateY(-20px);
+    border: double rgb(255, 251, 0);
 }
