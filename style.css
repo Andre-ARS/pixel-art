@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+}
+#color-palette {
+    border: solid 1px red;
+    
+    display: inline-block;
+}
+.color {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border: solid 1px black;
+    margin: 20px;
+}
