@@ -1,8 +1,9 @@
-let pixels = document.querySelector('#grid-length')
+let gridLength = document.querySelector('#grid-length')
 let grid = document.querySelector('#pixel-board')
 let colorPallet = document.querySelectorAll('#color-palette div')
 let pickedColor = document.getElementsByClassName('color selected')[0]
 let clearBoard = document.getElementById('clear-board')
+let pixels = document.getElementsByClassName('pixel')
 
 // function createBoard(base) {
 //     for (let index = 0; index < base; index += 1) {
@@ -40,10 +41,16 @@ function painter(event) {
     // }
 }
 
-grid.addEventListener('click', painter)
+for (let i = 0; i < pixels.length; i += 1){
+    pixels[i].addEventListener('click', painter)
+}
+
 
 function clear() {
-    document.getElementById('pixel-board').style.backgroundColor = 'white'
+
+    for (let i = 0; i < pixels.length; i += 1){
+        pixels[i].style.backgroundColor = 'white'
+    }
 }
 
 document.getElementById('clear-board').addEventListener('click', clear) 
