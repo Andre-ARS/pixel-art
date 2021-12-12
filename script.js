@@ -41,7 +41,7 @@ function painter(event) {
 }
 
 for (let i = 0; i < pixels.length; i += 1){
-    document.getElementsByClassName('pixel')[i].addEventListener('click', painter);
+    grid.addEventListener('click', painter);
 }
 
 
