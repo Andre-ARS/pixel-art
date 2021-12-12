@@ -8,7 +8,11 @@ const child = grid.childElementCount
 
 
 function createBoard() {
-grid.innerHTML = ''
+    if (boardSize.value === '') {
+        alert('Board inválido!')
+    }
+
+    grid.innerHTML = ''
 
     grid.style.width = 42 * boardSize.value + 'px'
     for (let index = 0; index < boardSize.value * boardSize.value; index += 1) {
