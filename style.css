@@ -45,8 +45,9 @@
 
 #pixel-board {
     display: inline-block;
-    margin: 0 41%;
-
+    margin: 0 auto;
+    width: 240px;
+    font-size: 0;
 }
 
 .pixel {
@@ -55,12 +56,11 @@
     width: 40px;
     border: solid 1px black;
     background-color: #fff;
-    margin: 0;
 }
 
 #clear-board {
     margin-left: 34.84%;
     margin-bottom: 30px;
-    
+
 }
 
