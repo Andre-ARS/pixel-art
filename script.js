@@ -68,12 +68,10 @@ function intervalCheck() {
     }
 }
 
-// function painter(event) {
-//     // if (event.target.className === 'color') {
-//         event.target.style.backgroundColor = window.getComputedStyle(document.getElementsByClassName('color selected')[0]).getPropertyValue('background-color'); 
-//     // }
-// }
+function eraser(event) {
+    event.target.style.backgroundColor = 'white'; 
+}
 
-// for (let i = 0; i < pixels.length; i += 1){
-//     grid.addEventListener('click', painter);
-// }
+for (let i = 0; i < pixels.length; i += 1){
+    grid.addEventListener('dblclick', eraser);
+}
