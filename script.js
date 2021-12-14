@@ -4,6 +4,7 @@ const clearBoard = document.getElementById('clear-board');
 const pixels = document.getElementsByClassName('pixel');
 const boardSize = document.getElementById('board-size');
 const vqvButton = document.getElementById('generate-board')
+const generateColor = document.getElementById('generate-color')
 const child = grid.childElementCount
 let colorRgb = []
 
@@ -106,12 +107,16 @@ function randomColors() {
 }
 
 function palletGenerator() {
+    colorRgb = []
+
     randomColors()
 
     document.getElementById('color2').style.backgroundColor = colorRgb[0]
     document.getElementById('color3').style.backgroundColor = colorRgb[1]
     document.getElementById('color4').style.backgroundColor = colorRgb[2]
 }
+
+generateColor.addEventListener('click', palletGenerator)
 
 window.onload = palletGenerator
 
