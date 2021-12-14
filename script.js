@@ -116,6 +116,15 @@ function palletGenerator() {
     document.getElementById('color4').style.backgroundColor = colorRgb[2]
 }
 
+function paintAll (event) {
+
+    for (let i = 0; i < pixels.length; i += 1){
+       document.getElementsByClassName('pixel')[i].style.backgroundColor = window.getComputedStyle(document.getElementsByClassName('color selected')[0]).getPropertyValue('background-color');
+    }
+}
+
+document.getElementById("paint-all").addEventListener('click', paintAll);
+
 generateColor.addEventListener('click', palletGenerator)
 
 window.onload = palletGenerator
