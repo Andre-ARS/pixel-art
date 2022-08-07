@@ -13,13 +13,14 @@ body {
     text-align: center;
     word-wrap: break-word;
     font-size: 55px;
-    width: 100%;
+    width: 98%;
     padding: 8px 0;
     color: rgba(230, 88, 148, 0.87);
     background: rgba(255, 255, 255, 0.4);
     border-radius: 10px;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
+    margin: auto;
 }
 
 #navigation {
